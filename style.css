@@ -91,6 +91,49 @@ html {
 }
 
 
+/* --------------------------------------------------*/
+/* ------------------HEADER STYLING------------------*/
+/* --------------------------------------------------*/
+.sm-btns-container {
+    position: fixed;
+    top: 20vh;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1919;
+}
+
+.sm-btns-fb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid white;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.sm-btns-inst {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.sm-btns-fb:hover {
+    transform: scale(1.3);
+}
+
+.sm-btns-inst:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+
 
 /* --------------------------------------------------*/
 /* ------------------HEADER STYLING------------------*/
@@ -146,7 +189,9 @@ html {
 .story-container {
     height: 100vh;
     width: auto;
-    background-color: #caf0f8;
+    background-image: url('./assets/storyBackground.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,11 +205,6 @@ html {
     font-size: 50px;
     padding: 10px 10px 40px 10px;
 }
-
-/* .story-text-container {
-    width: 700px;
-    padding: 0px 30px 0px 30px;
-} */
 
 .story-text {
     color: #F77F00;
@@ -189,6 +229,9 @@ html {
     height: 80px;
 }
 
+.above-story {
+    margin-bottom: 50px;
+}
 
 /* --------------------------------------------------*/
 /* ------------------MENU SECTION------------------*/
@@ -223,8 +266,9 @@ html {
     box-shadow: -30px 30px  #4CC9F0;
 }
 
-
-/*-------------LEFT SIDE---------------*/
+/* --------------------------------------------------*/
+/* ------------------MENU SECTION ONE------------------*/
+/* --------------------------------------------------*/
 .menu-list {
     height: 60vh;
     width: 50%;
@@ -436,14 +480,14 @@ html {
 } */
 
 /* ------------------RIGHT SIDE SECTION------------------*/
-.left-side {
-    width: 60%;
-    height: 100vh;
+.side {
+    width: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 20px;
     margin: 20px;
+    border: 10px solid #4CC9F0;
 }
 
 .location-container {
@@ -451,7 +495,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 10px solid #4CC9F0;
     padding: 20px;
 }
 
@@ -485,23 +528,13 @@ html {
 }
 
 /* ------------------LEFT SIDE SECTION------------------*/
-.right-side {
-    width: 40%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .contact-container {
-    border: 10px solid #4CC9F0;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     flex-direction: column;
-    padding: 20px;
-    margin-top: 50px;
 }
 
 .contact-title {
@@ -655,6 +688,12 @@ html {
         transition: 0.5s;
     }
 
+    .side {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
     .nav-links.active {
         left: 0;
     }
@@ -692,6 +731,10 @@ html {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .sm-btns-container {
+        top: 13vh;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -699,12 +742,12 @@ html {
         height: auto;
     }
 
-    .content-location {
+    .side {
         flex-direction: column;
     }
 
-    .right-side {
-        height: auto;
+    .content-location {
+        flex-direction: column;
     }
 
     .events-section {
@@ -753,6 +796,10 @@ html {
         padding: 10px 0px;
     }
 
+    .side {
+        flex-direction: column;
+    }
+
     
 }
 
@@ -776,6 +823,21 @@ html {
 
     .location-container {
         padding: 10px;
+    }
+
+    .sm-btns-container {
+        top: 14vh;
+        left: 20px;
+    }
+
+    .sm-btns-fb {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sm-btns-inst {
+        width: 40px;
+        height: 40px;
     }
 
 }

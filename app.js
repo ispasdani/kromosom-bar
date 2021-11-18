@@ -46,3 +46,15 @@ function closeMenu() {
 hamburger.addEventListener("click", mobileMenu);
 navBtn.forEach(n => n.addEventListener("click", closeMenu));
 
+
+// This function is for the SOCIAL MEDIA BUTTONS 
+const fbBtn = document.querySelector('.sm-btns-fb');
+const instaBtn = document.querySelector('.sm-btns-inst');
+
+fbBtn.addEventListener('click', function () {
+  window.open('https://www.facebook.com/Kromosom66')
+})
+
+instaBtn.addEventListener('click', function () {
+  window.open('https://www.instagram.com/kromosom66/')
+})
