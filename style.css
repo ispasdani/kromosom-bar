@@ -685,7 +685,7 @@ html {
         background-color: white;
         width: 100%;
         text-align: center;
-        transition: 0.5s;
+        transition: 1s;
     }
 
     .side {
