@@ -237,24 +237,31 @@ html {
 /* ------------------MENU SECTION------------------*/
 /* --------------------------------------------------*/
 .menu-container {
-    height: 60vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: url('./assets/bodyBackground.png');
     background-position: center;
     background-size: cover;
-    padding: 20px;
+    margin: 40px 0px 0px 0px;
 }
 
-/*-------------RIGHT SIDE---------------*/
+.menu-title {
+    font-size: 50px;
+    color: #F77F00;
+    padding: 20px 20px 30px 20px;
+}
+
 .menu-img {
     height: 60vh;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .menu-coffee-img {
@@ -266,57 +273,100 @@ html {
     box-shadow: -30px 30px  #4CC9F0;
 }
 
-/* --------------------------------------------------*/
-/* ------------------MENU SECTION ONE------------------*/
-/* --------------------------------------------------*/
-.menu-list {
-    height: 60vh;
-    width: 50%;
+.coffee-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    margin: 50px 0px;
+    height: 400px;
+    width: auto;
 }
 
-.menu-title {
-    font-size: 50px;
-    color: #F77F00;
-    padding: 20px 20px 30px 20px;
-}
-
-.menu-item-title {
-    padding: 15px;
-    color: #F77F00;
-    font-size: 20px;
-}
-
-.menu-item-price {
-    padding: 20px 20px 20px 60px;
-}
-
-/* --------------------------------------------------*/
-/* ------------------MENU SECTION TWO------------------*/
-/* --------------------------------------------------*/
-.menu-container-two {
-    height: 60vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./assets/bodyBackground.png');
-    background-position: center;
-    background-size: cover;
+.coffee-li {
+    font-size: 22px;
+    color: tomato;
+    list-style-type: none;
     padding: 20px;
 }
 
+.prices {
+    padding: 20px;
+    color: tomato;
+}
+
+.coffee-menu {
+    border: 10px solid #4CC9F0;
+    padding: 20px 5px;
+}
+
+
+/* ------------------BEER SECTION------------------*/
 .menu-beer-img {
     height: 300px;
     width: 400px;
     background-image: url('./assets/beerimg.jpg');
     background-position: center;
     background-size: cover;
-    box-shadow: 30px -30px  #F7AEF8;
+    box-shadow: -30px 30px  #F7AEF8;
 }
+.order-1 {
+    order: 1;
+}
+
+.beer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    height: 400px;
+    width: auto;
+}
+
+.beer-li {
+    font-size: 22px;
+    color: tomato;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.beer-menu {
+    border: 10px solid #F7AEF8;
+    padding: 20px 5px;
+    order: 2;
+}
+
+/* ------------------Wine SECTION------------------*/
+.menu-wine-img {
+    height: 300px;
+    width: 400px;
+    background-image: url('./assets/wineImg.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: -30px 30px  #80b918;
+}
+
+.wine-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0px;
+    height: 400px;
+    width: auto;
+}
+
+.wine-li {
+    font-size: 22px;
+    color: tomato;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.wine-menu {
+    border: 10px solid #80b918;
+    padding: 20px 5px;
+}
+
+
 
 /* --------------------------------------------------*/
 /* ------------------EVENTS SECTION TWO------------------*/
@@ -777,6 +827,26 @@ html {
         height: 200px;
         width: 300px;
     }
+
+    .menu-wine-img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .coffee-section {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .beer-section {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .wine-section {
+        flex-direction: column;
+        height: 800px;
+    }
 }
 
 @media only screen and (max-width: 657px) {
@@ -798,6 +868,18 @@ html {
 
     .side {
         flex-direction: column;
+    }
+
+    .coffee-section {
+        margin: 0;
+    }
+
+    .beer-section {
+        margin: 0;
+    }
+
+    .wine-section {
+        margin: 0;
     }
 
     
@@ -920,6 +1002,18 @@ html {
 
     .header-h1 {
         font-size: 50px;
+    }
+
+    .coffee-section {
+        height: 700px;
+    }
+
+    .beer-section {
+        height: 650px;
+    }
+
+    .wine-section {
+        height: 650px;
     }
     
     
